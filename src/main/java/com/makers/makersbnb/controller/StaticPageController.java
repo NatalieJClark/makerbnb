@@ -17,6 +17,8 @@ public class StaticPageController {
         // imagine these reviews were stored in a database
         String[] reviews = new String[] {"Awesome", "Nice", "Perfect"};
         modelAndView.addObject("reviews", reviews);
+        Integer nBookings = 123;
+        modelAndView.addObject("nBookings", nBookings);
         return modelAndView;
     }
 

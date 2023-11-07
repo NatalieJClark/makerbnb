@@ -23,6 +23,8 @@
         <li th:each="review : ${reviews}" th:text="${review}"></li>
     </ul>
 
+    <p th:text="${nBookings} + ' bookings were made last week'"></p>
+
 </body>
 
 </html>
