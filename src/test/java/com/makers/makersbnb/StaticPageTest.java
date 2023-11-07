@@ -42,6 +42,12 @@ class StaticPageTest {
     }
 
     @Test
+    public void usersSeeNumberOfBookingsLastWeek() {
+        page.navigate("localhost:8080");
+        Locator pageParagraph = page.locator("p");
+        assertThat(pageParagraph).containsText("123 bookings were made last week");
+    }
+    @Test
     public void usersSeeEmail() {
         page.navigate("localhost:8080/contactus");
         Locator pageBody = page.locator("body");
