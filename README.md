@@ -9,4 +9,6 @@
 - [x] Learn to set up a new Spring Boot project from scratch.  
 - [x] Learn to handle requests using controllers in a Spring Boot project.
 - [x] Learn to write feature tests in Java using Playwright.
+- [x] Learn to pass data from controllers to Thymeleaf templates.  
+- [x] Learn to iterate through arrays in Thymeleaf templates.
 
