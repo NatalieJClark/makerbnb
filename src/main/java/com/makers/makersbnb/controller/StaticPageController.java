@@ -6,12 +6,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StaticPageController {
     @GetMapping("/")
-    public String landingpage() {
+    public String landingPage() {
         return "Welcome to MakersBnB!";
     }
 
     @GetMapping("/contactus")
-    public String contactpage() {
+    public String contactPage() {
         return "info@makersbnb.com";
+    }
+
+    @GetMapping("/termsandconditions")
+    public String tcPage() {
+        return "Coming soon! In the meantime, please behave yourselves.";
     }
 }
