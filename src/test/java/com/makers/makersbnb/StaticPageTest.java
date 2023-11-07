@@ -45,4 +45,11 @@ class StaticPageTest {
         Locator pageBody = page.locator("body");
         assertThat(pageBody).containsText("info@makersbnb.com");
     }
+
+    @Test
+    public void usersSeeComingSoonMessage() {
+        page.navigate("localhost:8080/termsandconditions");
+        Locator pageBody = page.locator("body");
+        assertThat(pageBody).containsText("Coming soon! In the meantime, please behave yourselves.");
+    }
 }
