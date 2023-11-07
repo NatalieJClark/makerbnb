@@ -16,7 +16,7 @@ public class StaticPageController {
     }
 
     @GetMapping("/termsandconditions")
-    public String tcPage() {
+    public String termsConditionsPage() {
         return "Coming soon! In the meantime, please behave yourselves.";
     }
 }
