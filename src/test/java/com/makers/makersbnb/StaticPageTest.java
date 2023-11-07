@@ -37,6 +37,8 @@ class StaticPageTest {
         page.navigate("localhost:8080");
         Locator pageBody = page.locator("body");
         assertThat(pageBody).containsText("Welcome to MakersBnB!");
+        Locator pageH3 = page.locator("h3");
+        assertThat(pageH3).containsText("spaces are waiting to be discovered");
     }
 
     @Test
