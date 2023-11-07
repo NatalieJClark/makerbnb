@@ -11,4 +11,5 @@
 - [x] Learn to write feature tests in Java using Playwright.
 - [x] Learn to pass data from controllers to Thymeleaf templates.  
 - [x] Learn to iterate through arrays in Thymeleaf templates.
+- [x] Learn to make changes to my database using Flyway migrations.
 
