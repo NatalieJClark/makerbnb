@@ -35,10 +35,10 @@ class StaticPageTest {
     @Test
     public void usersAreWelcomedToTheApp() {
         page.navigate("localhost:8080");
-        Locator pageBody = page.locator("body");
-        assertThat(pageBody).containsText("Welcome to MakersBnB!");
+        Locator pageH1 = page.locator("h1");
+        assertThat(pageH1).containsText("Welcome to MakersBnB!");
         Locator pageH3 = page.locator("h3");
-        assertThat(pageH3).containsText("spaces are waiting to be discovered");
+        assertThat(pageH3).containsText("100 spaces are waiting to be discovered");
     }
 
     @Test
@@ -53,5 +53,12 @@ class StaticPageTest {
         page.navigate("localhost:8080/termsandconditions");
         Locator pageBody = page.locator("body");
         assertThat(pageBody).containsText("Coming soon! In the meantime, please behave yourselves.");
+    }
+
+    @Test
+    public void usersSeeJoinNowAndUserNumber() {
+        page.navigate("localhost:8080/signup");
+        Locator pageH1 = page.locator("h1");
+        assertThat(pageH1).containsText("Join now to become user number 57");
     }
 }
