@@ -1,1 +1,1 @@
-CREATE TABLE spaces (\qid bigserial PRIMARY KEY, name VARCHAR(100));
+CREATE TABLE spaces (id bigserial PRIMARY KEY, name VARCHAR(100));
