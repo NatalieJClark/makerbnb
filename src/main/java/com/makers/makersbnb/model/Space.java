@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 // @Entity - instances of this class map to database records
 @Entity
 // @Table - those records can be found in the spaces table
-@Table
+@Table(name = "SPACES")
 public class Space {
     // id field is the primary key for this Entity
     @Id
