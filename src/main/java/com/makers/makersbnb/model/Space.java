@@ -26,7 +26,7 @@ public class Space {
     // a zero-arguments constructor
     public Space() {}
 
-    // a one-argument constructor
+    // constructor
     public Space(String name, String description, int price) {
         this.name = name;
         this.description = description;
