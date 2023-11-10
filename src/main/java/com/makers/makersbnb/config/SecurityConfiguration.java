@@ -18,6 +18,7 @@ public class SecurityConfiguration {
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests( request -> {
                     request.requestMatchers("/").permitAll();
+                    request.requestMatchers("/signup").permitAll();
                     request.anyRequest().authenticated();
                 })
                 .oauth2Login(withDefaults())
