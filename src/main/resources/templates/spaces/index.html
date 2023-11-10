@@ -12,6 +12,8 @@
 <body>
 
   <h1>Spaces!</h1>
+
+  <h2 th:text="'Welcome ' + ${username} + '!'"></h2>
   <ul>
     <li th:each="space : ${spaces}" th:text="${space.name} + ' - ' + ${space.description} + ' - £' + ${space.price}"></li>
   </ul>
