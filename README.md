@@ -16,3 +16,4 @@
 - [x] Learn to build and use repository classes in Java.
 - [x] Learn to build Thymeleaf forms. 
 - [x] Learn to handle form submission.
+- [x] Learn to secure my app using OAuth2.
