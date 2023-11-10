@@ -14,3 +14,5 @@
 - [x] Learn to make changes to my database using Flyway migrations.
 - [x] Learn to define database-backed Models.
 - [x] Learn to build and use repository classes in Java.
+- [x] Learn to build Thymeleaf forms. 
+- [x] Learn to handle form submission.
