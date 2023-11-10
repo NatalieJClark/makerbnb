@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Spaces</title>
+
+</head>
+
+<body>
+
+  <h1>Spaces!</h1>
+  <ul>
+    <li th:each="space : ${spaces}" th:text="${space.name} + ' - ' + ${space.description} + ' - £' + ${space.price}"></li>
+  </ul>
+
+  <form action="/spaces" th:object="${space}" method="post">
+
+    <p>
+      Name: <input type="text" th:field="*{name}" />
+    </p>
+
+    <p>
+      Description: <input type="text" th:field="*{description}" />
+    </p>
+
+    <p>
+      Price: <input type="text" th:field="*{price}" />
+    </p>
+
+    <p>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </p>
+
+  </form>
+
+</body>
+
+</html>
