@@ -24,6 +24,10 @@
 
 ## Setup
 
-1. Start a server running on port 8080 by going to the Gradle tab then `makersbnb -> Tasks -> application -> bootRun` 
-2. Than visit `localhost:8080` in an incognito browser  
-3. Login with GitHub
+```java
+// Start a server running on port 8080 by going to the Gradle tab then makersbnb -> Tasks -> application -> bootRun
+
+// To run the tests right-cick on the test directory com.maker.makersbnb and select Run Tests
+
+// Then visit localhost:8080 in an incognito browser and login with GitHub
+```
